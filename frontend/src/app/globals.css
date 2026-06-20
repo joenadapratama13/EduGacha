@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-inverse-primary: #eebd8e;
+  --color-inverse-on-surface: #f4f0e6;
+  --color-surface-container-highest: #e6e2d7;
+  --color-on-primary-fixed: #2c1600;
+  --color-primary: #79542e;
+  --color-surface-variant: #e6e2d7;
+  --color-surface-container-lowest: #ffffff;
+  --color-parchment-border: #dbd0ba;
+  --color-tier-epic: #9b4dca;
+  --color-tertiary-fixed: #f1dfd1;
+  --color-on-secondary-container: #6b6453;
+  --color-secondary-fixed-dim: #cfc6b1;
+  --color-background: #fdf9ee;
+  --color-tier-legendary: #d4af37;
+  --color-on-surface-variant: #50453b;
+  --color-on-primary-fixed-variant: #61401b;
+  --color-on-tertiary: #ffffff;
+  --color-ink-muted: #7d6b56;
+  --color-surface: #fdf9ee;
+  --color-primary-fixed-dim: #eebd8e;
+  --color-secondary-fixed: #ece2cc;
+  --color-error: #ba1a1a;
+  --color-surface-container: #f2eee3;
+  --color-tertiary: #665a4f;
+  --color-surface-bright: #fdf9ee;
+  --color-surface-container-high: #ece8dd;
+  --color-on-secondary: #ffffff;
+  --color-on-tertiary-fixed-variant: #50453b;
+  --color-surface-container-low: #f7f3e8;
+  --color-on-error: #ffffff;
+  --color-on-background: #1c1c15;
+  --color-on-tertiary-container: #fffbff;
+  --color-primary-fixed: #ffdcbd;
+  --color-tertiary-fixed-dim: #d4c4b6;
+  --color-on-secondary-fixed-variant: #4c4637;
+  --color-primary-container: #956c44;
+  --color-on-error-container: #93000a;
+  --color-tier-rare: #3498db;
+  --color-on-secondary-fixed: #201b0e;
+  --color-on-primary: #ffffff;
+  --color-outline-variant: #d4c4b7;
+  --color-outline: #82756a;
+  --color-secondary-container: #ece2cc;
+  --color-on-primary-container: #fffbff;
+  --color-ink-text: #4a3f35;
+  --color-error-container: #ffdad6;
+  --color-surface-dim: #dddacf;
+  --color-on-tertiary-fixed: #231a11;
+  --color-tertiary-container: #807267;
+  --color-on-surface: #1c1c15;
+  --color-surface-tint: #7c5730;
+  --color-secondary: #655e4d;
+  --color-paper-surface: #fffcf5;
+  --color-inverse-surface: #323129;
+
+  --spacing-margin-desktop: 64px;
+  --spacing-margin-mobile: 16px;
+  --spacing-unit: 8px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  --font-stats-lg: "IBM Plex Mono", monospace;
+  --font-headline-lg: "Libre Baskerville", serif;
+  --font-headline-lg-mobile: "Libre Baskerville", serif;
+  --font-body-lg: "Lora", serif;
+  --font-headline-xl: "Libre Baskerville", serif;
+  --font-label-mono: "IBM Plex Mono", monospace;
+  --font-body-md: "Lora", serif;
+}
+
+/* Custom styles from the original HTML code stitch */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.paper-texture {
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+}
+
+.sketch-border {
+  border-style: solid;
+  border-width: 1.5px;
+  border-image: linear-gradient(to right, #dbd0ba, #79542e, #dbd0ba) 1;
+}
+
+.ink-drop-shadow {
+  filter: drop-shadow(4px 4px 12px rgba(74, 63, 53, 0.08));
+}
+
+/* Custom typography classes to guarantee exact parameters */
+.text-stats-lg {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: var(--font-stats-lg);
+}
+
+.text-headline-lg {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: var(--font-headline-lg);
+}
+
+.text-headline-lg-mobile {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: var(--font-headline-lg-mobile);
+}
+
+.text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: var(--font-body-lg);
+}
+
+.text-headline-xl {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-family: var(--font-headline-xl);
+}
+
+.text-label-mono {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-family: var(--font-label-mono);
+}
+
+.text-body-md {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: var(--font-body-md);
+}
+
+/* Scroll Animation classes */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal-active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}

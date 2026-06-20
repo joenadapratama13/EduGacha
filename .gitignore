@@ -1,0 +1,62 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+
+# Python / FastAPI
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment Secrets (Keamanan data)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# IDE / System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Agentic / AI files
+.agent/
+.agents/
+.superpowers/
+.gemini/
+skills-lock.json
+temp_clone/
+
+# Media & Videos
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Documents & Reference Files
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.pptx
+
+# Prototyping & Scratch files
+assets/animasi gacha/
+check_env.py
+test_submit.py
+
+# Internal Development Docs
+docs/superpowers/
+
